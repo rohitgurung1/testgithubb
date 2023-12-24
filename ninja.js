@@ -1,16 +1,16 @@
-// Define Kakashi Hatake object
 var kakashiHatake = {
-    name: "Kakashi Hatake",
-    village: "Hidden Leaf Village",
-    rank: "Jonin",
-    specialTechnique: "Sharingan",
-    age: 35, // Just an example age
-    isSensei: true,
-    getInfo: function() {
-      return this.name + " is a " + this.rank + " from the " + this.village + ". He is known for his " + this.specialTechnique + " and is a skilled sensei.";
-    }
-  };
-  
-  // Display Kakashi's information
-  console.log(kakashiHatake.getInfo());
-  
+  name: "Kakashi Hatake",
+  village: "Hidden Leaf Village",
+  rank: "Jonin",
+  specialTechnique: "Sharingan",
+  age: 35,
+  isSensei: true
+};
+
+// Update HTML elements with Kakashi's information
+document.getElementById('name').innerText = kakashiHatake.name;
+document.getElementById('village').innerText = kakashiHatake.village;
+document.getElementById('rank').innerText = kakashiHatake.rank;
+document.getElementById('technique').innerText = kakashiHatake.specialTechnique;
+document.getElementById('age').innerText = kakashiHatake.age;
+document.getElementById('isSensei').innerText = kakashiHatake.isSensei ? 'Yes' : 'No';
